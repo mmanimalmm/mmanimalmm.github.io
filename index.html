@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DS QA Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">DS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-sub">QA Engineer</p>
+      <h1 class="hero-title">안녕하세요,<br /><span>윤대식</span>입니다.</h1>
+      <p class="hero-desc">품질을 검증하고, 완성도를 높입니다.</p>
+      <a href="#projects" class="btn-primary">프로젝트 보기</a>
+    </div>
+    <div class="hero-bg-circle"></div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>품질 검증에 열정을 가진 QA 엔지니어 윤대식입니다.<br />버그를 발견하고, 팀과 함께 완성도를 높이는 것을 목표로 합니다.</p>
+          <div class="skills">
+            <span class="skill-tag">QA</span>
+            <span class="skill-tag">테스트 기획</span>
+            <span class="skill-tag">버그 리포팅</span>
+            <span class="skill-tag">Unity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-thumb">🛡️</div>
+          <div class="project-badge">QA · 기능 테스트 · Unity 팀 프로젝트</div>
+          <h3>겨울잠 수호대</h3>
+          <p class="project-sub">3D 비폭력 스나이퍼 슈팅 · 모바일(Android / iOS)</p>
+          <p>마취총으로 동물 친구들을 안전하게 재우는 Unity 기반 모바일 게임. QA 담당으로 전 개발 단계에 걸친 테스트를 수행하며, UI 개선과 사용자 경험 중심 검증으로 프로젝트 완성도를 높였습니다.</p>
+          <div class="project-roles">
+            <span>QA 리드</span>
+            <span>기능 테스트</span>
+            <span>버그 리포팅</span>
+            <span>UI 개선</span>
+          </div>
+          <div class="project-tags">
+            <span>Unity</span><span>GitHub</span><span>VS Code</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/mmanimalmm" target="_blank" class="project-link-btn">GitHub</a>
+            <a href="https://www.youtube.com/watch?v=ifnIgA4fo3M" target="_blank" class="project-link-btn outline">QA 영상</a>
+            <a href="https://youtu.be/z9wi2pXwdms?si=6feYo9U7dVSse09i" target="_blank" class="project-link-btn outline">시연 영상</a>
+          </div>
+          <button class="detail-toggle" data-toggle="detail-winter" onclick="toggleDetail('detail-winter')">자세히 보기 ▾</button>
+          <div class="project-detail" id="detail-winter">
+            <div class="detail-divider"></div>
+
+            <div class="detail-section">
+              <h4 class="detail-heading">게임 컨셉</h4>
+              <p class="detail-text">겨울잠을 자야 하는 동물 친구들을 마취총으로 안전하게 재우는 비폭력 슈팅 게임. 귀여운 동물 캐릭터와 코믹한 분위기로 가볍게 즐길 수 있는 모바일 경험을 목표로 기획했습니다.</p>
+            </div>
+
+            <div class="detail-section">
+              <h4 class="detail-heading">핵심 시스템</h4>
+              <ul class="system-list">
+                <li>3인칭 ↔ 1인칭 시점 전환 (Cinemachine 기반 Zoom-In/Out 연출)</li>
+                <li>조이스틱 기반 좌우 레일 이동 시스템</li>
+                <li>BulletCam 슬로모션 연출 (TimeScale 제어)</li>
+                <li>동물별 행동 패턴 기반 타겟팅 및 히트 판정</li>
+                <li>시간 제한 · 적중률 · 타깃 수 기반 별점 스코어 시스템</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4 class="detail-heading">QA 프로세스</h4>
+              <div class="qa-phases">
+                <span class="qa-phase">프로토타입 QA</span>
+                <span class="qa-phase-arrow">→</span>
+                <span class="qa-phase">일일 QA (v1.00–v1.03)</span>
+                <span class="qa-phase-arrow">→</span>
+                <span class="qa-phase">FGT 오류 리포팅</span>
+              </div>
+              <div class="qa-stats">
+                <div class="qa-stat">
+                  <span class="qa-stat-num">6</span>
+                  <span class="qa-stat-label">발견 이슈</span>
+                </div>
+                <div class="qa-stat">
+                  <span class="qa-stat-num">5</span>
+                  <span class="qa-stat-label">수정 완료</span>
+                </div>
+                <div class="qa-stat">
+                  <span class="qa-stat-num">1</span>
+                  <span class="qa-stat-label">높음 우선순위</span>
+                </div>
+                <div class="qa-stat">
+                  <span class="qa-stat-num">4</span>
+                  <span class="qa-stat-label">보통 우선순위</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h4 class="detail-heading">주요 발견 이슈 및 개선</h4>
+              <ul class="system-list">
+                <li>발사 버튼 연속 터치로 총알 중복 발사 (높음) → 버튼 터치 즉시 비활성화 처리</li>
+                <li>크로스헤어 타깃 감지 피드백 없음 → Raycast 기반 색상 전환(빨간색)으로 개선</li>
+                <li>Head·Body Collider 중첩으로 이중 히트 판정 → Collider 단일화</li>
+                <li>동물별 히트 애니메이션 Trigger/Bool 조건 불일치 → 조건 통일 및 애니메이터 분리</li>
+                <li>스테이지 6 진입 불가 데이터 누락 → Coming Soon 잠금 처리(임시 조치)</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4 class="detail-heading">QA 문서화</h4>
+              <ul class="system-list">
+                <li>프로토타입 QA 시트 — 50+ 항목 기능 체크리스트 작성 및 진행</li>
+                <li>일일 QA 시트 4버전(v1.00~v1.03) — 매일 이슈 기록 및 팀 공유</li>
+                <li>FGT 오류 리포팅 — 우선순위·반복성·처리상태 포함 공식 문서 작성</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <div class="platform-info">
+                <span class="platform-label">플랫폼</span>
+                <span>Android / iOS</span>
+                <span class="platform-label">장르</span>
+                <span>3D 스나이퍼 슈팅</span>
+                <span class="platform-label">엔진</span>
+                <span>Unity 2022.3 LTS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card featured">
+          <div class="project-thumb">🤖</div>
+          <div class="project-badge">AI 기획 · QA 검토 · 팀 프로젝트</div>
+          <h3>Moz.A.I.c</h3>
+          <p>AI 요소와 게임 시스템을 결합한 기획 프로젝트. 기획 단계부터 QA 관점으로 참여해 사용자 경험 흐름과 게임 구조의 잠재적 결함을 사전에 검토. 테스트 가능한 방향으로 기획 완성도를 높이는 데 기여.</p>
+          <div class="project-roles">
+            <span>기획 QA 검토</span>
+            <span>UX 플로우 검증</span>
+            <span>결함 사전 분석</span>
+            <span>팀 프로젝트</span>
+          </div>
+          <div class="project-tags">
+            <span>Notion</span><span>Unity</span><span>GitHub</span>
+          </div>
+          <div class="project-links">
+            <a href="https://app.notion.com/p/2-322a88c5418980729b37ddd77a03cf74" target="_blank" class="project-link-btn">기획서</a>
+            <a href="https://youtu.be/jmPI6qiN4U0" target="_blank" class="project-link-btn outline">시연 영상</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">🎲</div>
+          <h3>프로젝트명</h3>
+          <p>게임 설명을 입력하세요.</p>
+          <div class="project-tags">
+            <span>Unity</span><span>C#</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="section" id="videos">
+    <div class="container">
+      <h2 class="section-title">Videos</h2>
+      <p class="section-desc">QA 과정 및 시연 영상입니다.</p>
+      <div class="videos-grid">
+        <div class="video-card">
+          <p class="video-title"><span class="video-num">01</span>겨울잠 수호대 — QA 피드백 반영 영상</p>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ifnIgA4fo3M" title="QA 피드백 반영 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <p class="video-title"><span class="video-num">02</span>겨울잠 수호대 — 시연 영상</p>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/z9wi2pXwdms" title="겨울잠 수호대 시연 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <p class="video-title"><span class="video-num">03</span>Moz.A.I.c — 팀 프로젝트 시연 영상</p>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/jmPI6qiN4U0" title="Moz.A.I.c 시연 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">협업 또는 문의는 아래로 연락해주세요.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">✉</span>
+          <a href="mailto:yds001218@naver.com">yds001218@naver.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">▶</span>
+          <a href="https://youtube.com/@dhjc1?si=Tn1grufmtpKqLzey" target="_blank">youtube.com/@dhjc1</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🐱</span>
+          <a href="https://github.com/mmanimalmm" target="_blank">github.com/mmanimalmm</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 윤대식. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
