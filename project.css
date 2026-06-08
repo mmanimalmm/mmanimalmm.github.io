@@ -1,0 +1,185 @@
+/* Project detail page styles */
+
+.proj-hero {
+  padding: 8rem 5% 3.5rem;
+  background: var(--dark);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: var(--primary);
+}
+
+.proj-thumb-lg {
+  font-size: 4rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.proj-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0.4rem 0;
+}
+
+.proj-subtitle {
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 0.8rem;
+}
+
+.proj-tags-large {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.6rem 0 1rem;
+}
+
+.proj-tags-large span {
+  background: rgba(108, 99, 255, 0.15);
+  color: var(--primary);
+  padding: 0.2rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.proj-roles-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 1.2rem;
+}
+
+.proj-roles-bar span {
+  background: rgba(0, 200, 150, 0.1);
+  color: #00c896;
+  border: 1px solid rgba(0, 200, 150, 0.3);
+  padding: 0.25rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.proj-section {
+  padding: 4rem 5%;
+}
+
+.proj-section-dark {
+  background: var(--dark2);
+}
+
+.proj-section-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: var(--white);
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.proj-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.proj-block {
+  background: rgba(108, 99, 255, 0.04);
+  border: 1px solid rgba(108, 99, 255, 0.15);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.proj-block-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.proj-block-text {
+  color: #aaa;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.proj-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.proj-list li {
+  color: #aaa;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.proj-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 0.7rem;
+  top: 2px;
+}
+
+.issue-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 50px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+
+.issue-badge.high {
+  background: rgba(255, 80, 80, 0.15);
+  color: #ff5959;
+  border: 1px solid rgba(255, 80, 80, 0.3);
+}
+
+.issue-badge.mid {
+  background: rgba(255, 165, 0, 0.12);
+  color: #ffaa00;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-hero {
+    padding: 7rem 5% 3rem;
+  }
+}

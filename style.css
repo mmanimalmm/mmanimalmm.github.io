@@ -429,7 +429,7 @@ body {
 }
 
 .project-detail.open {
-  max-height: 1000px;
+  max-height: 2500px;
 }
 
 .detail-divider {
@@ -554,6 +554,71 @@ body {
   color: var(--gray);
   margin-top: 0.3rem;
   line-height: 1.2;
+}
+
+/* QA 문서 다운로드 */
+.qa-docs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.qa-doc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.1);
+}
+
+.qa-doc-row:last-child {
+  border-bottom: none;
+}
+
+.qa-doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.qa-doc-name {
+  color: #ccc;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.qa-doc-desc {
+  color: var(--gray);
+  font-size: 0.74rem;
+}
+
+.qa-doc-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.doc-download-btn {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  background: transparent;
+  border: 1px solid rgba(0, 200, 150, 0.4);
+  color: #00c896;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.doc-download-btn:hover {
+  background: rgba(0, 200, 150, 0.12);
+  border-color: rgba(0, 200, 150, 0.7);
 }
 
 /* Responsive */
